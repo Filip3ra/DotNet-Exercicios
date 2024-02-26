@@ -1,0 +1,14 @@
+C:\Users\Usuario\Documents\IFNMG\2024\dotNET\Exercícios\bin\Debug\net8.0\Exercícios.exe
+C:\Users\Usuario\Documents\IFNMG\2024\dotNET\Exercícios\bin\Debug\net8.0\Exercícios.deps.json
+C:\Users\Usuario\Documents\IFNMG\2024\dotNET\Exercícios\bin\Debug\net8.0\Exercícios.runtimeconfig.json
+C:\Users\Usuario\Documents\IFNMG\2024\dotNET\Exercícios\bin\Debug\net8.0\Exercícios.dll
+C:\Users\Usuario\Documents\IFNMG\2024\dotNET\Exercícios\bin\Debug\net8.0\Exercícios.pdb
+C:\Users\Usuario\Documents\IFNMG\2024\dotNET\Exercícios\obj\Debug\net8.0\Exercícios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Documents\IFNMG\2024\dotNET\Exercícios\obj\Debug\net8.0\Exercícios.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\IFNMG\2024\dotNET\Exercícios\obj\Debug\net8.0\Exercícios.AssemblyInfo.cs
+C:\Users\Usuario\Documents\IFNMG\2024\dotNET\Exercícios\obj\Debug\net8.0\Exercícios.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\IFNMG\2024\dotNET\Exercícios\obj\Debug\net8.0\Exercícios.dll
+C:\Users\Usuario\Documents\IFNMG\2024\dotNET\Exercícios\obj\Debug\net8.0\refint\Exercícios.dll
+C:\Users\Usuario\Documents\IFNMG\2024\dotNET\Exercícios\obj\Debug\net8.0\Exercícios.pdb
+C:\Users\Usuario\Documents\IFNMG\2024\dotNET\Exercícios\obj\Debug\net8.0\Exercícios.genruntimeconfig.cache
+C:\Users\Usuario\Documents\IFNMG\2024\dotNET\Exercícios\obj\Debug\net8.0\ref\Exercícios.dll
