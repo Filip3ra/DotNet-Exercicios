@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Documents\\IFNMG\\2024\\dotNET\\Exercícios\\Exercícios.csproj": {}
+    "C:\\Users\\Usuario\\Documents\\IFNMG\\2024\\dotNET\\Exercícios\\Exercício_1\\Exercícios.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Documents\\IFNMG\\2024\\dotNET\\Exercícios\\Exercícios.csproj": {
+    "C:\\Users\\Usuario\\Documents\\IFNMG\\2024\\dotNET\\Exercícios\\Exercício_1\\Exercícios.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\IFNMG\\2024\\dotNET\\Exercícios\\Exercícios.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\IFNMG\\2024\\dotNET\\Exercícios\\Exercício_1\\Exercícios.csproj",
         "projectName": "Exercícios",
-        "projectPath": "C:\\Users\\Usuario\\Documents\\IFNMG\\2024\\dotNET\\Exercícios\\Exercícios.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\IFNMG\\2024\\dotNET\\Exercícios\\Exercício_1\\Exercícios.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Documents\\IFNMG\\2024\\dotNET\\Exercícios\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\IFNMG\\2024\\dotNET\\Exercícios\\Exercício_1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"

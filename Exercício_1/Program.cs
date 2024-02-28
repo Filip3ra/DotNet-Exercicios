@@ -12,11 +12,12 @@
       Ao tentar comparar tipos de valores (int, string, etc) com tipos de referência
       (objetos, vetores, etc) o retorno da função sempre será falso.
 
+*/
 
-      using System;
+using System;
 
-      public class Program
-      {
+public class Program
+{
       public static void Main()
       {
             int n = 3;
@@ -41,15 +42,14 @@
             Console.WriteLine("Dog3 e Dog2 : {0}", object.Equals(d3, d2));
             Console.WriteLine("array e int : {0}", object.Equals(vet, n));
             Console.WriteLine("array[0] e int : {0}", object.Equals(vet[0], n));
-            
-
 
       }
-      }
+}
 
 
-      public class Dog
-      {
+
+public class Dog
+{
       // Public field.
       public string name;
 
@@ -58,9 +58,9 @@
       {
             this.name = dogName;
       }
-      }
+}
 
-*/
+
 
 /* 2. Como atribuir o valor de um array 'a' para um array 'b' e, em seguida, 
 modificar 'b' sem afetar o array original?
@@ -141,7 +141,7 @@ pois diferente do for ele dispensa de indicar critérios de parada ou
 o tamanho que vamos percorrer. Ele vai iterar sobre todos os elementos
 do array do começo ao fim. 
 
-*/
+
 
 using System;
 
@@ -160,3 +160,5 @@ public class Program
 
   }
 }
+
+*/
