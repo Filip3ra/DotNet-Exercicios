@@ -170,6 +170,10 @@ o tamanho que vamos percorrer. Ele vai iterar sobre todos os elementos
 do array do começo ao fim. 
 
 Função lambda proxima aula...
+1 pt extra: questão sobre sistemas de tipos do c#, inovadora...
+
+
+
 
 */
 
@@ -190,4 +194,3 @@ public class Program
 
   }
 }
-
