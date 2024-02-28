@@ -12,7 +12,19 @@
       Ao tentar comparar tipos de valores (int, string, etc) com tipos de referência
       (objetos, vetores, etc) o retorno da função sempre será falso.
 
-*/
+      Adendo: 
+      * Classe pai do equals é o object.
+      * Compara os valores.
+      * Para tipos de referência o equals compara a referência, exceto
+      para string, é o único tipo que fere essa regra. Fizeram isso
+      devido no projeto de designe da linguagem, pois essa comparação
+      é muito usada e trivial, então ficaria mais fácil para todos 
+      se essa excessão foi implementada.
+
+      * Sistemas de tipos
+      
+
+
 
 using System;
 
@@ -21,6 +33,7 @@ public class Program
       public static void Main()
       {
             int n = 3;
+            int m = 3;
             float f = 1.2F;
             string s = "Filipi";
             object o1 = n;
@@ -30,6 +43,20 @@ public class Program
             Dog d3 = d2;
             int[] vet = {1,2,3,4,5};
 
+            object ob1 = new(), ob2 = new();
+            string str1 = "texto", str2 = "texto";
+            int[]a = {1,2};
+            int[]b = {1,2};
+
+      
+           
+            Console.WriteLine("a[] e b[] : {0}", a[1].Equals(b[1]));
+
+            
+            Console.WriteLine("string e string : {0}", str1.Equals(str2));
+
+
+            Console.WriteLine("int e int : {0}", n.Equals(m));
             Console.WriteLine("objeto e int : {0}", n.Equals(o1));
             Console.WriteLine("objeto e objeto : {0}", o1.Equals(o2));
             Console.WriteLine("objeto e float : {0}", o1.Equals(f));
@@ -59,7 +86,7 @@ public class Dog
             this.name = dogName;
       }
 }
-
+*/
 
 
 /* 2. Como atribuir o valor de um array 'a' para um array 'b' e, em seguida, 
@@ -110,13 +137,14 @@ public class Program
 /* 3. Explique cada comando e o que acontece no seguinte código .
 
 List<string> nomes = new List<string>();
-Declara uma lista do tipo string chamada "nomes".
+//Declara uma lista do tipo string chamada "nomes".
 
-nomes.AddRange(new [] {".net", "2023", "ifnmg"});
-Cria uma array de strings com alguns elementos.
-Usa o método "AddRange" para adiciona-los na lista "nomes".
+nomes.AddRange([".net", "2023", "ifnmg"]);
+//Cria uma array de strings com alguns elementos.
+//Usa o método "AddRange" para adiciona-los na lista "nomes".
 
-Console.WriteLine(nomes);
+Console.WriteLine(nomes[0]);
+
 Comando usado para imprimir a lista "nomes", porém se implementado
 dessa forma o que será impresso é o tipo do objeto e não seu conteúdo,
 nesse caso, o resultado será "[System.String]". Para imprimir o conteúdo
@@ -141,7 +169,9 @@ pois diferente do for ele dispensa de indicar critérios de parada ou
 o tamanho que vamos percorrer. Ele vai iterar sobre todos os elementos
 do array do começo ao fim. 
 
+Função lambda proxima aula...
 
+*/
 
 using System;
 
@@ -161,4 +191,3 @@ public class Program
   }
 }
 
-*/
