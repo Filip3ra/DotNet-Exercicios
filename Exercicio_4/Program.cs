@@ -65,7 +65,12 @@
     int numero;
     if (int.TryParse(entrada, out numero))
     {
-
+      string mensagem = (numero % 2 == 0) ? "par" : "ímpar";
+      Console.WriteLine($"O número é {mensagem}.");
+    }
+    else
+    {
+      Console.WriteLine("Entrada inválida. Por favor, insira um número inteiro válido.");
     }
   }
 
@@ -74,6 +79,7 @@
     Program p = new Program();
     //p.comSwitch();
     //p.comIfsemElse();
+    //p.comOperadorTernario();
 
 
   }
