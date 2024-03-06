@@ -67,13 +67,14 @@
     {
 
     }
-
-    static void Main()
-    {
-      Program p = new Program();
-      //p.comSwitch();
-      //p.comIfsemElse();
-
-
-    }
   }
+
+  static void Main()
+  {
+    Program p = new Program();
+    //p.comSwitch();
+    //p.comIfsemElse();
+
+
+  }
+}
