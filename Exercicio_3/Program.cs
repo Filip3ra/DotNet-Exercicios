@@ -17,7 +17,8 @@
     while (true)
     {
       Console.WriteLine("Informe dois valores inteiros: ");
-      string entrada = Console.ReadLine()!;
+      //string entrada = Console.ReadLine()!; // operador "!" apenas suprime o warning
+      string ? entrada = Console.ReadLine();  // forço a variável receber um nulo
 
       valores = entrada.Split(' ');
 
@@ -28,8 +29,8 @@
     }
 
     // Converter os valores para inteiro
-    int valor1 = int.Parse(valores[0]);
-    int valor2 = int.Parse(valores[1]);
+    int valor1 = int.Parse(valores[0] ?? "0"); // Tratamento para caso seja nulo
+    int valor2 = int.Parse(valores[1] ?? "0");
 
     // Saída questão 1
     Console.WriteLine("Adição: {0}", valor1 + valor2);
