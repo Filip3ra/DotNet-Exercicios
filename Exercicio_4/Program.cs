@@ -44,11 +44,36 @@
       Console.WriteLine("Entrada inválida. Por favor, insira um número inteiro válido.");
   }
 
-  static void Main()
+  void semControle() // ???????
   {
-    Program p = new Program();
-    p.comSwitch();
-    p.comIfsemElse();
+    Console.WriteLine("Digite um número inteiro:");
+    string? entrada = Console.ReadLine();
 
+    int numero;
+    int.TryParse(entrada, out numero);
+
+    // como vou definir se é par ou impar sem usar if?
+    Console.WriteLine("O número é par.");
+    Console.WriteLine("O número é ímpar.");
   }
-}
+
+  void comOperadorTernario()
+  {
+    Console.WriteLine("Digite um número inteiro:");
+    string? entrada = Console.ReadLine();
+
+    int numero;
+    if (int.TryParse(entrada, out numero))
+    {
+
+    }
+
+    static void Main()
+    {
+      Program p = new Program();
+      //p.comSwitch();
+      //p.comIfsemElse();
+
+
+    }
+  }
