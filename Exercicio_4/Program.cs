@@ -47,7 +47,7 @@
   // c) Solução 1
   void semControle1()
   {
-    /* Apenas informe o resultado da divisão e explique o que é
+    /* Apenas informo o resultado da divisão e explico o que é
       par ou ímpar para o usuário. */
 
     Console.WriteLine("Digite um número inteiro:");
@@ -73,7 +73,11 @@
        faltantes para a palavra ser "ímpar".
        */
     Console.Write("Digite um número inteiro: ");
-    int numero = Convert.ToInt32(Console.ReadLine());
+    string? entrada = Console.ReadLine();
+
+    int numero;
+    int.TryParse(entrada, out numero);
+
 
     int restoDivisaoPor2 = numero % 2;
 
