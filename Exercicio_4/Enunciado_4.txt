@@ -1,0 +1,6 @@
+1. Escrever par ou ímpar na tela, a partir de uma variável:
+a) com switch
+b) com if sem else
+c) sem nenhuma estrutura de controle
+d) com operador ternário
+2. Escreva um programa que use switch para encontrar o valor máximo entre dois números

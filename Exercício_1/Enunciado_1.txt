@@ -1,0 +1,11 @@
+1. É possível comparar tanto tipos de valor quanto tipos de referência usando o método Equals? Dê, pelo menos, três exemplos distintos de uso com tipos de valor e referência.
+
+2. Como atribuir o valor de um array 'a' para um array 'b' e, em seguida, modificar 'b' sem afetar o array original?
+
+3. Explique cada comando e o que acontece no seguinte código .
+
+List<string> nomes = new List<string>();
+nomes.AddRange(new [] {".net", "2023", "ifnmg"});
+Console.WriteLine(nomes);
+
+4.Pesquise e apresente uma forma de exibir todos os elementos da variável “nomes” do exemplo anterior, sem usar uma estrutura de repetição expliticitamente, nos moldes tradicionais.

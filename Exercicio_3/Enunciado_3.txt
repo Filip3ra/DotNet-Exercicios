@@ -1,0 +1,2 @@
+1. Escreva um programa em C# que receba dois números inteiros do usuário e exiba o resultado das seguintes operações: adição, subtração, multiplicação, divisão inteira e resto da divisão entre os números. Pesquisar uma forma de verificar se o tipo está correto.
+2. Escreva um programa em C# que utilize uma única expressão lambda para fazer todas as operações da questão 1. Em seguida, exiba o resultado na tela.
