@@ -1,0 +1,8 @@
+Tipos de referência armazenam uma referência ao dado na memória.
+tipos de valor armazena o dado em si na memória. 
+
+Tendo em mente essas duas diferenças, o que você deve levar em conta
+ao decidir usar tipos de valores e de referência
+em seus projetos?
+
+https://www.linkedin.com/pulse/value-vs-reference-types-c-roman-fairushyn
