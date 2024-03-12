@@ -1,6 +1,4 @@
-﻿using System;
-
-class Program
+﻿class Program
 {
   private int meses;
   private double juros, valor;
@@ -25,26 +23,26 @@ class Program
   double coeficienteFinanciamento()
   {
     double jurosDecimal = juros / 100.0; // Convertendo juros de percentual para decimal
-    return (jurosDecimal / (1 - Math.Pow(1 + jurosDecimal, -meses)));
+    return jurosDecimal / (1 - Math.Pow(1 + jurosDecimal, -meses));
   }
 
   void getSaida()
   {
     double parcela = valor * coeficienteFinanciamento();
     double total = meses * parcela;
-      Console.WriteLine("meses : {0}", meses);
-      Console.WriteLine("juros : {0}", juros);
-      Console.WriteLine("valor : {0}", valor);
-      Console.WriteLine("coeficiente : {0:F3}", coeficienteFinanciamento());
-      Console.WriteLine("Valor parcela : {0:F2}", parcela);
-      Console.WriteLine("Valor total : {0:F2}", total);
-      Console.WriteLine("Juros totais : {0:F2}", total - valor);
+    Console.WriteLine("meses : {0}", meses);
+    Console.WriteLine("juros : {0}", juros);
+    Console.WriteLine("valor : {0}", valor);
+    Console.WriteLine("coeficiente : {0:F3}", coeficienteFinanciamento());
+    Console.WriteLine("Valor parcela : {0:F2}", parcela);
+    Console.WriteLine("Valor total : {0:F2}", total);
+    Console.WriteLine("Juros totais : {0:F2}", total - valor);
   }
 
   static void Main()
   {
-      Program p = new Program();
-      p.setEntradas();
-      p.getSaida();
+    Program p = new Program();
+    p.setEntradas();
+    p.getSaida();
   }
 }
