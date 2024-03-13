@@ -17,7 +17,6 @@
     int.TryParse(m, out meses);
     double.TryParse(j, out juros);
     double.TryParse(v, out valor);
-
   }
 
   double coeficienteFinanciamento()
