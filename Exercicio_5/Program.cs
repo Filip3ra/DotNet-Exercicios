@@ -32,7 +32,7 @@
     Console.WriteLine("meses : {0}", meses);
     Console.WriteLine("juros : {0}", juros);
     Console.WriteLine("valor : {0}", valor);
-    Console.WriteLine("coeficiente : {0:F3}", coeficienteFinanciamento());
+    Console.WriteLine("coeficiente : {0:F4}", coeficienteFinanciamento());
     Console.WriteLine("Valor parcela : {0:F2}", parcela);
     Console.WriteLine("Valor total : {0:F2}", total);
     Console.WriteLine("Juros totais : {0:F2}", total - valor);
