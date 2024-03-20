@@ -1,6 +1,10 @@
 ﻿
 class Program
 {
+
+
+
+
   static void Main()
   {
     DataProcessor dataProcessor = new DataProcessor();
@@ -10,16 +14,17 @@ class Program
     {
       Console.Write("Digite um número ou digite 'F' para finalizar: ");
       string? input = Console.ReadLine();
+      bool? teste = input != null && input.Equals("F");
 
-      if (input.ToUpper() == "F")
+      if (teste == true)
       {
         condicao = false;
       }
       else
       {
-        if (int.TryParse(input, out int number))
+        if (int.TryParse(input, out int valor))
         {
-          dataProcessor.AddNumber(number);
+          dataProcessor.addNumero(valor);
         }
         else
         {
@@ -28,10 +33,10 @@ class Program
       }
     }
 
-    if (dataProcessor.NumberOfDataPoints > 0)
+    if (dataProcessor.qtdDados > 0)
     {
-      Console.WriteLine($"Média: {dataProcessor.CalculateMean()}");
-      Console.WriteLine($"Desvio padrão: {dataProcessor.CalculateStandardDeviation()}");
+      Console.WriteLine($"Média: {dataProcessor.calculaMedia()}");
+      Console.WriteLine($"Desvio padrão: {dataProcessor.calculaDesvioPadrao()}");
     }
     else
     {
@@ -42,41 +47,41 @@ class Program
 
 class DataProcessor
 {
-  private List<int> dataPoints;
+  private List<int> dados;
 
   public DataProcessor()
   {
-    dataPoints = new List<int>();
+    dados = new List<int>();
   }
 
-  public int NumberOfDataPoints => dataPoints.Count;
+  public int qtdDados => dados.Count;
 
-  public void AddNumber(int number)
+  public void addNumero(int num)
   {
-    dataPoints.Add(number);
+    dados.Add(num);
   }
 
-  public double CalculateMean()
+  public double calculaMedia()
   {
-    if (NumberOfDataPoints == 0)
+    if (qtdDados == 0)
       return 0;
 
-    return dataPoints.Average();
+    return dados.Average();
   }
 
-  public double CalculateStandardDeviation()
+  public double calculaDesvioPadrao()
   {
-    if (NumberOfDataPoints == 0)
+    if (qtdDados == 0)
       return 0;
 
-    double mean = CalculateMean();
-    double sumOfSquaresOfDifferences = dataPoints.Select(val => (val - mean) * (val - mean)).Sum();
-    double variance = sumOfSquaresOfDifferences / NumberOfDataPoints;
-    return Math.Sqrt(variance);
+    double media = calculaMedia();
+    double somaQuadradoDiferencas = dados.Select(val => (val - media) * (val - media)).Sum();
+    double varianca = somaQuadradoDiferencas / qtdDados;
+    return Math.Sqrt(varianca);
   }
 
   public override string ToString()
   {
-    return $"Número de pontos de dados: {NumberOfDataPoints}";
+    return $"Número de pontos de dados: {qtdDados}";
   }
 }
