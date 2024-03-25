@@ -29,8 +29,7 @@ public class Calculadora
     {
         try
         {
-          int num1 = 8;
-          bool t = null;
+            int num1 = 8;
 
             // Teste da calculadora
             Console.WriteLine(Calcular(16, 51, "+"));
