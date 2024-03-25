@@ -1,9 +1,8 @@
-﻿using System;
-
-public class Calculadora
+﻿public class Calculadora
 {
     public static string Calcular(int num1, int num2, string operador)
     {
+
         if (operador == null)
             throw new ArgumentNullException(nameof(operador), "O operador não pode ser nulo.");
 
@@ -29,13 +28,13 @@ public class Calculadora
     {
         try
         {
-            int num1 = 8;
+            int val = 8;
 
             // Teste da calculadora
             Console.WriteLine(Calcular(16, 51, "+"));
-            Console.WriteLine(Calcular(16, num1, "*"));
+            Console.WriteLine(Calcular(16, val, "*"));
             //Console.WriteLine(Calcular(16, 0, "/")); // Divisão por zero
-            //Console.WriteLine(Calcular(16, 51, "-")); // Operador inválido
+            Console.WriteLine(Calcular(16, 51, "-")); // Operador inválido
         }
         catch (Exception ex)
         {
