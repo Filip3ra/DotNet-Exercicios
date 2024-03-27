@@ -79,8 +79,8 @@ class Program
 
         try
         {
-            AnagramFinder finder = new AnagramFinder(palavraBase, listaPalavras); // Cria um objeto AnagramFinder com a palavra base e a lista de palavras
-            List<string> anagramas = finder.EncontrarAnagramas(); // Encontra os anagramas da palavra base na lista de palavras
+            AnagramFinder finder = new AnagramFinder(palavraBase, listaPalavras);
+            List<string> anagramas = finder.EncontrarAnagramas(); // pq esse finder?
 
             // Verifica se foram encontrados anagramas
             if (anagramas.Count > 0)
