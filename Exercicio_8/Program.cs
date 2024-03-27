@@ -74,7 +74,7 @@ class Program
         Console.WriteLine("Digite a lista de palavras separadas por espaço:");
         List<string>? listaPalavras = Console.ReadLine()?.Split(' ').ToList(); // "?" verifica se o retorno do readline é nulo
 
-        if (palavraBase is not null && listaPalavras is not null) // Verifica se são nulas
+        if (palavraBase is not null && listaPalavras is not null)
         {
             try
             {
@@ -87,7 +87,7 @@ class Program
                     Console.WriteLine("Anagramas:");
                     foreach (string anagrama in anagramas)
                     {
-                        Console.WriteLine(anagrama); // Exibe cada anagrama encontrado
+                        Console.WriteLine(anagrama);
                     }
                 }
                 else
@@ -97,7 +97,7 @@ class Program
             }
             catch (ArgumentException e)
             {
-                Console.WriteLine(e.Message); // Captura e exibe qualquer exceção relacionada à palavra base vazia
+                Console.WriteLine(e.Message);
             }
         }
         else
