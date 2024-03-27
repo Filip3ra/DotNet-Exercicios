@@ -1,20 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-class AnagramFinder
+﻿
+class EncontraAnagrama
 {
-    private string palavraBase; // A palavra base para encontrar anagramas
-    private List<string> listaPalavras; // Lista de palavras para comparar com a palavra base
+    private string palavraBase;
+    private List<string> listaPalavras;
 
-    // Construtor da classe AnagramFinder
-    public AnagramFinder(string palavraBase, List<string> listaPalavras)
+    // Construtor
+    public EncontraAnagrama(string palavraBase, List<string> listaPalavras)
     {
         this.palavraBase = palavraBase;
         this.listaPalavras = listaPalavras;
     }
 
-    // Propriedade para acessar e definir a palavra base
+    // Get e set palavra-base
     public string PalavraBase
     {
         get { return palavraBase; }
@@ -28,7 +25,7 @@ class AnagramFinder
         }
     }
 
-    // Propriedade para acessar e definir a lista de palavras
+    // Get e set lista de palavras
     public List<string> ListaPalavras
     {
         get { return listaPalavras; }
@@ -38,16 +35,16 @@ class AnagramFinder
     // Método para ordenar uma string (usado para comparar anagramas)
     private string OrdenarString(string str)
     {
-        char[] chars = str.ToLower().ToCharArray(); // Converte a string para um array de caracteres e coloca em minúsculas
-        Array.Sort(chars); // Ordena os caracteres
-        return new string(chars); // Retorna a string ordenada
+        char[] chars = str.ToLower().ToCharArray();
+        Array.Sort(chars);
+        return new string(chars);
     }
 
     // Método para encontrar anagramas da palavra base na lista de palavras
     public List<string> EncontrarAnagramas()
     {
-        List<string> anagramas = new List<string>(); // Lista para armazenar os anagramas encontrados
-        string palavraOrdenada = OrdenarString(palavraBase); // Obtém a palavra base ordenada alfabeticamente
+        List<string> anagramas = new List<string>();
+        string palavraBaseOrdenada = OrdenarString(palavraBase);
 
         // Percorre cada palavra na lista de palavras
         foreach (string palavra in listaPalavras)
@@ -55,50 +52,59 @@ class AnagramFinder
             // Verifica se o tamanho da palavra é igual ao da palavra base e se não é a mesma palavra
             if (palavra.Length == palavraBase.Length && palavra.ToLower() != palavraBase.ToLower())
             {
-                string palavraComparada = OrdenarString(palavra); // Obtém a palavra atual ordenada alfabeticamente
+                string palavraAtualOrdenada = OrdenarString(palavra);
 
-                // Verifica se a palavra ordenada é igual à palavra base ordenada
-                if (palavraComparada == palavraOrdenada)
-                    anagramas.Add(palavra); // Adiciona a palavra à lista de anagramas
+                // Verifica se a palavra atual ordenada é igual à palavra base ordenada
+                if (palavraAtualOrdenada == palavraBaseOrdenada)
+                    anagramas.Add(palavra);
             }
         }
 
-        return anagramas; // Retorna a lista de anagramas encontrados
+        return anagramas;
     }
 }
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
         Console.WriteLine("Digite a palavra-base:");
-        string palavraBase = Console.ReadLine();
+        string? palavraBase = Console.ReadLine();
 
         Console.WriteLine("Digite a lista de palavras separadas por espaço:");
-        List<string> listaPalavras = Console.ReadLine().Split(' ').ToList();
+        List<string>? listaPalavras = Console.ReadLine()?.Split(' ').ToList(); // "?" verifica se o retorno do readline é nulo
 
-        try
+        if (palavraBase is not null && listaPalavras is not null) // Verifica se são nulas
         {
-            AnagramFinder finder = new AnagramFinder(palavraBase, listaPalavras);
-            List<string> anagramas = finder.EncontrarAnagramas(); // pq esse finder?
-
-            // Verifica se foram encontrados anagramas
-            if (anagramas.Count > 0)
+            try
             {
-                Console.WriteLine("Anagramas:");
-                foreach (string anagrama in anagramas)
+                EncontraAnagrama objeto = new EncontraAnagrama(palavraBase, listaPalavras);
+                List<string> anagramas = objeto.EncontrarAnagramas();
+
+                // Verifica se foram encontrados anagramas
+                if (anagramas.Count > 0)
                 {
-                    Console.WriteLine(anagrama); // Exibe cada anagrama encontrado
+                    Console.WriteLine("Anagramas:");
+                    foreach (string anagrama in anagramas)
+                    {
+                        Console.WriteLine(anagrama); // Exibe cada anagrama encontrado
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Nenhum anagrama encontrado.");
                 }
             }
-            else
+            catch (ArgumentException e)
             {
-                Console.WriteLine("Nenhum anagrama encontrado.");
+                Console.WriteLine(e.Message); // Captura e exibe qualquer exceção relacionada à palavra base vazia
             }
         }
-        catch (ArgumentException e)
+        else
         {
-            Console.WriteLine(e.Message); // Captura e exibe qualquer exceção relacionada à palavra base vazia
+            Console.WriteLine("Entradas nulas são inválidas.");
         }
+
+
     }
 }
