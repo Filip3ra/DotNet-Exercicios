@@ -102,7 +102,7 @@ class Program
         }
         else
         {
-            Console.WriteLine("Entradas nulas são inválidas.");
+            Console.WriteLine("Entradas não podem ser nulas.");
         }
 
 
