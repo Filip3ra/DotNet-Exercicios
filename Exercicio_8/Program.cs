@@ -1,4 +1,6 @@
 ﻿
+
+//dif ref e aut
 class EncontraAnagrama
 {
     private string palavraBase;

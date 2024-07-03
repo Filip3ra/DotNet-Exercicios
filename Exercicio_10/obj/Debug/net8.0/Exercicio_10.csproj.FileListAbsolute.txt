@@ -1,0 +1,15 @@
+C:\Users\filip\OneDrive\Documentos\IFNMG\NET\DotNet-Exercicios\Exercicio_10\obj\Debug\net8.0\Exercicio_10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\filip\OneDrive\Documentos\IFNMG\NET\DotNet-Exercicios\Exercicio_10\obj\Debug\net8.0\Exercicio_10.AssemblyInfoInputs.cache
+C:\Users\filip\OneDrive\Documentos\IFNMG\NET\DotNet-Exercicios\Exercicio_10\obj\Debug\net8.0\Exercicio_10.AssemblyInfo.cs
+C:\Users\filip\OneDrive\Documentos\IFNMG\NET\DotNet-Exercicios\Exercicio_10\obj\Debug\net8.0\Exercicio_10.csproj.CoreCompileInputs.cache
+C:\Users\filip\OneDrive\Documentos\IFNMG\NET\DotNet-Exercicios\Exercicio_10\obj\Debug\net8.0\Exercicio_10.sourcelink.json
+C:\Users\filip\OneDrive\Documentos\IFNMG\NET\DotNet-Exercicios\Exercicio_10\bin\Debug\net8.0\Exercicio_10.exe
+C:\Users\filip\OneDrive\Documentos\IFNMG\NET\DotNet-Exercicios\Exercicio_10\bin\Debug\net8.0\Exercicio_10.deps.json
+C:\Users\filip\OneDrive\Documentos\IFNMG\NET\DotNet-Exercicios\Exercicio_10\bin\Debug\net8.0\Exercicio_10.runtimeconfig.json
+C:\Users\filip\OneDrive\Documentos\IFNMG\NET\DotNet-Exercicios\Exercicio_10\bin\Debug\net8.0\Exercicio_10.dll
+C:\Users\filip\OneDrive\Documentos\IFNMG\NET\DotNet-Exercicios\Exercicio_10\bin\Debug\net8.0\Exercicio_10.pdb
+C:\Users\filip\OneDrive\Documentos\IFNMG\NET\DotNet-Exercicios\Exercicio_10\obj\Debug\net8.0\Exercicio_10.dll
+C:\Users\filip\OneDrive\Documentos\IFNMG\NET\DotNet-Exercicios\Exercicio_10\obj\Debug\net8.0\refint\Exercicio_10.dll
+C:\Users\filip\OneDrive\Documentos\IFNMG\NET\DotNet-Exercicios\Exercicio_10\obj\Debug\net8.0\Exercicio_10.pdb
+C:\Users\filip\OneDrive\Documentos\IFNMG\NET\DotNet-Exercicios\Exercicio_10\obj\Debug\net8.0\Exercicio_10.genruntimeconfig.cache
+C:\Users\filip\OneDrive\Documentos\IFNMG\NET\DotNet-Exercicios\Exercicio_10\obj\Debug\net8.0\ref\Exercicio_10.dll

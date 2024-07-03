@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Documents\\IFNMG\\2024\\dotNET\\Exercícios\\Exercício_1\\Exercícios.csproj": {}
+    "C:\\Users\\filip\\OneDrive\\Documentos\\IFNMG\\NET\\DotNet-Exercicios\\Exercício_1\\Exercícios.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Documents\\IFNMG\\2024\\dotNET\\Exercícios\\Exercício_1\\Exercícios.csproj": {
+    "C:\\Users\\filip\\OneDrive\\Documentos\\IFNMG\\NET\\DotNet-Exercicios\\Exercício_1\\Exercícios.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\IFNMG\\2024\\dotNET\\Exercícios\\Exercício_1\\Exercícios.csproj",
+        "projectUniqueName": "C:\\Users\\filip\\OneDrive\\Documentos\\IFNMG\\NET\\DotNet-Exercicios\\Exercício_1\\Exercícios.csproj",
         "projectName": "Exercícios",
-        "projectPath": "C:\\Users\\Usuario\\Documents\\IFNMG\\2024\\dotNET\\Exercícios\\Exercício_1\\Exercícios.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Documents\\IFNMG\\2024\\dotNET\\Exercícios\\Exercício_1\\obj\\",
+        "projectPath": "C:\\Users\\filip\\OneDrive\\Documentos\\IFNMG\\NET\\DotNet-Exercicios\\Exercício_1\\Exercícios.csproj",
+        "packagesPath": "C:\\Users\\filip\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\filip\\OneDrive\\Documentos\\IFNMG\\NET\\DotNet-Exercicios\\Exercício_1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\filip\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

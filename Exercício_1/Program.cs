@@ -181,16 +181,16 @@ using System;
 
 public class Program
 {
-  public static void Main()
-  {
+      public static void Main()
+      {
 
-    List<string> nomes = new List<string>();
-    nomes.AddRange(new[] { ".net", "2023", "ifnmg" });
+            List<string> nomes = new List<string>();
+            nomes.AddRange(new[] { ".net", "2023", "ifnmg" });
 
-    string resultado = string.Join(", ", nomes);
-    Console.WriteLine(resultado);
+            string resultado = string.Join(", ", nomes);
+            Console.WriteLine(resultado);
 
-    nomes.ForEach(Console.WriteLine);
+            nomes.ForEach(Console.WriteLine);
 
-  }
+      }
 }

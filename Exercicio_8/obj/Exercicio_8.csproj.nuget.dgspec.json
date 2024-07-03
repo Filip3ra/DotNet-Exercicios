@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Documents\\IFNMG\\2024\\dotNET\\Exercícios\\Exercicio_8\\Exercicio_8.csproj": {}
+    "C:\\Users\\filip\\OneDrive\\Documentos\\IFNMG\\NET\\DotNet-Exercicios\\Exercicio_8\\Exercicio_8.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Documents\\IFNMG\\2024\\dotNET\\Exercícios\\Exercicio_8\\Exercicio_8.csproj": {
+    "C:\\Users\\filip\\OneDrive\\Documentos\\IFNMG\\NET\\DotNet-Exercicios\\Exercicio_8\\Exercicio_8.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\IFNMG\\2024\\dotNET\\Exercícios\\Exercicio_8\\Exercicio_8.csproj",
+        "projectUniqueName": "C:\\Users\\filip\\OneDrive\\Documentos\\IFNMG\\NET\\DotNet-Exercicios\\Exercicio_8\\Exercicio_8.csproj",
         "projectName": "Exercicio_8",
-        "projectPath": "C:\\Users\\Usuario\\Documents\\IFNMG\\2024\\dotNET\\Exercícios\\Exercicio_8\\Exercicio_8.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Documents\\IFNMG\\2024\\dotNET\\Exercícios\\Exercicio_8\\obj\\",
+        "projectPath": "C:\\Users\\filip\\OneDrive\\Documentos\\IFNMG\\NET\\DotNet-Exercicios\\Exercicio_8\\Exercicio_8.csproj",
+        "packagesPath": "C:\\Users\\filip\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\filip\\OneDrive\\Documentos\\IFNMG\\NET\\DotNet-Exercicios\\Exercicio_8\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\filip\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\filip\\AppData\\Local\\Microsoft\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
