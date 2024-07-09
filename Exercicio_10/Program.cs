@@ -96,7 +96,7 @@ namespace PangramaChecker
         return;
       }
 
-      // Verifica se é pangrama
+      // Exibe se é pangrama
       if (pangramaChecker.VerificaPangrama())
       {
         Console.WriteLine("É um pangrama");
