@@ -21,9 +21,7 @@ namespace PangramaChecker
     // podemos converter tudo pra minúscula
     public Pangrama(string frase)
     {
-      Console.WriteLine(frase);
-      this.frase = RemoveAcento(frase);
-      //this.frase = frase.ToLower();
+      this.frase = RemoveAcento(frase.ToLower());
     }
 
     // Verifica se cada letra do alfabeto está na frase
@@ -42,26 +40,15 @@ namespace PangramaChecker
     // Método para remover acentos
     public string RemoveAcento(string frase)
     {
-      Console.WriteLine(frase);
-
-      string er = "[áàâãä]";
-      string a = "a";
-      string result;
-      result = Regex.Replace(frase, er, a);
-      /*frase = Regex.Replace(frase, "[éèêë]", "e");
+      frase = Regex.Replace(frase, "[áàâãä]", "a");
+      frase = Regex.Replace(frase, "[éèêë]", "e");
       frase = Regex.Replace(frase, "[íìîï]", "i");
       frase = Regex.Replace(frase, "[óòôõö]", "o");
       frase = Regex.Replace(frase, "[úùûü]", "u");
-      frase = Regex.Replace(frase, "[ç]", "c");*/
-
-      Console.WriteLine(result);
-
-      return result;
+      frase = Regex.Replace(frase, "[ç]", "c");
+      return frase;
     }
   }
-
-
-
 
   // Classe derivada para Inglês
   public class PangramaIngles : Pangrama
@@ -80,21 +67,19 @@ namespace PangramaChecker
       alfabeto = "abcdefghijlmnopqrstuvxz";
     }
   }
-
   
   class Program
   {
     static void Main(string[] args)
     {
-      Console.InputEncoding = Encoding.UTF8;
-//      Console.OutputEncoding = Encoding.UTF8;
+      Console.InputEncoding = Encoding.Unicode;
+      Console.OutputEncoding = Encoding.Unicode;
 
       Console.WriteLine("Deseja usar em Inglês, Português ou Antigo Português? (I/P/A)");
       string idioma = Console.ReadLine().ToUpper();
 
       Console.WriteLine("Digite a frase:");
       string frase = Console.ReadLine();
-      Console.WriteLine(frase);
       
       Pangrama pangramaChecker;
 
