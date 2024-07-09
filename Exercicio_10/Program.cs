@@ -27,16 +27,23 @@ namespace PangramaChecker
     {
       foreach (char letra in alfabeto)
       {
-
         if (!frase.Contains(letra)) // Se não tiver a letra retorna false
         {
-          Console.WriteLine("Não encontrou letra: ", letra);
           return false;
         }
       }
       return true;
     }
   }
+
+  public class RemoveAcentos : Pangrama
+  {
+    foreach (char letra in frase)
+    {
+      
+    }
+  }
+
 
   // Classe derivada para Inglês
   public class PangramaIngles : Pangrama
@@ -64,6 +71,8 @@ namespace PangramaChecker
       alfabeto = "abcdefghijlmnopqrstuvxz";
     }
   }
+
+
 
   class Program
   {
