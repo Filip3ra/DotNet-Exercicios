@@ -54,7 +54,9 @@ public class MergeSort : IOrdenacao
 {
     public void Sort(List<string> lista)
     {
-        lista = MergeSortAlgorithm(lista);
+        var sortedList = MergeSortAlgorithm(lista);
+        lista.Clear();
+        lista.AddRange(sortedList);
     }
 
     private List<string> MergeSortAlgorithm(List<string> lista)
@@ -160,13 +162,12 @@ public class Program
         estudantes.Add("Beatriz");
 
         // Ordenação usando QuickSort
-        /*
         estudantes.SetEstrategia(new QuickSort());
         Console.WriteLine("Ordenação usando QuickSort:");
         estudantes.Sort();
 
         Console.WriteLine();
-        */
+        
         estudantes.Add("Abilio");
         estudantes.Add("Bruno");
 
