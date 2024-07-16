@@ -12,16 +12,16 @@ public class QuickSort : IOrdenacao
 {
     public void Sort(List<string> lista)
     {
-        QuickSortAlgorithm(lista, 0, lista.Count - 1);
+        QuickSort(lista, 0, lista.Count - 1);
     }
 
-    private void QuickSortAlgorithm(List<string> lista, int left, int right)
+    private void QuickSort(List<string> lista, int left, int right)
     {
         if (left < right)
         {
             int pivot = Partition(lista, left, right);
-            QuickSortAlgorithm(lista, left, pivot - 1);
-            QuickSortAlgorithm(lista, pivot + 1, right);
+            QuickSort(lista, left, pivot - 1);
+            QuickSort(lista, pivot + 1, right);
         }
     }
 
@@ -54,10 +54,10 @@ public class MergeSort : IOrdenacao
 {
     public void Sort(List<string> lista)
     {
-        lista = MergeSortAlgorithm(lista);
+        lista = MergeSort(lista);
     }
 
-    private List<string> MergeSortAlgorithm(List<string> lista)
+    private List<string> MergeSort(List<string> lista)
     {
         if (lista.Count <= 1)
             return lista;
@@ -71,8 +71,8 @@ public class MergeSort : IOrdenacao
         for (int i = middle; i < lista.Count; i++)
             right.Add(lista[i]);
 
-        left = MergeSortAlgorithm(left);
-        right = MergeSortAlgorithm(right);
+        left = MergeSort(left);
+        right = MergeSort(right);
         return Merge(left, right);
     }
 
