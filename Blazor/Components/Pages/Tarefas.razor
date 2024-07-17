@@ -1,12 +1,51 @@
 ﻿@page "/tarefas"
+@rendermode InteractiveServer
 
 <PageTitle>Tarefas</PageTitle>
 
 <h1>Tarefas</h1>
 
-lorem ipsim sodoasdia.
+<ul>
+    @foreach (var t in tarefas)
+    {
+        <li>
+            <input type="checkbox" @bind="t.Concluido" />
+            @t.Titulo
+        </li>
+    }
+</ul>
 
-@code
+<input placeholder="Alguma tarefa" @bind="novaTarefa" />
+<button @onclick="AdicionarTarefa">Adicionar</button>
+
+@if (!string.IsNullOrEmpty(mensagemErro))
 {
-  
+    <p style="color: red;">@mensagemErro</p>
+}
+
+@code {
+    private List<Item> tarefas = new();
+    private string? novaTarefa;
+    private string? mensagemErro;
+
+    private void AdicionarTarefa()
+    {
+        if (string.IsNullOrWhiteSpace(novaTarefa))
+        {
+            mensagemErro = "A string não pode ser vazia";
+        }
+        else
+        {
+            tarefas.Add(new Item { Titulo = novaTarefa });
+            novaTarefa = string.Empty;
+            mensagemErro = null; // Limpar a mensagem de erro
+        }
+    }
+
+    public class Item
+    {
+        public string? Titulo { get; set; }
+
+        public bool Concluido { get; set; } = false;
+    }
 }
