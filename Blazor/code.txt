@@ -1,0 +1,41 @@
+@page "/tarefas"
+@rendermode InteractiveServer
+<h1>Tarefas</h1>
+<ul> @foreach (var t in tarefas){
+<li>@t.Titulo</li> }
+</ul>
+<input placeholder="Alguma
+tarefa"@bind="novaTarefa"/>
+<button@onclick="AdicionarTarefa">
+Adicionar</button>
+
+
+@code{
+private List<Item> tarefas=new();
+private string? novaTarefa;
+private void AdicionarTarefa(){
+if(!string.IsNullOrWhiteSpace(novaTarefa)){
+tarefas.Add(new Item {Titulo=novaTarefa });
+novaTarefa = string.Empty;
+}//fim if
+} //fim func
+
+
+  public class Item{
+    public string? Titulo {
+
+    get; set; 
+  }
+
+  public bool Concluido {
+    get; set; } = false;
+  }
+
+
+<ul>
+@foreach (var t in tarefas){
+<li>
+<input type="checkbox" @bind="t.Concluido"/>
+@t.Titulo </li>
+}
+</ul>
