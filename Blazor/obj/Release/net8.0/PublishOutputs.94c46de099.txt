@@ -1,0 +1,7 @@
+C:\Users\filip\OneDrive\Documentos\IFNMG\NET\DotNet-Exercicios\Blazor\bin\Release\net8.0\publish\Blazor.exe
+C:\Users\filip\OneDrive\Documentos\IFNMG\NET\DotNet-Exercicios\Blazor\bin\Release\net8.0\publish\appsettings.Development.json
+C:\Users\filip\OneDrive\Documentos\IFNMG\NET\DotNet-Exercicios\Blazor\bin\Release\net8.0\publish\appsettings.json
+C:\Users\filip\OneDrive\Documentos\IFNMG\NET\DotNet-Exercicios\Blazor\bin\Release\net8.0\publish\Blazor.dll
+C:\Users\filip\OneDrive\Documentos\IFNMG\NET\DotNet-Exercicios\Blazor\bin\Release\net8.0\publish\Blazor.deps.json
+C:\Users\filip\OneDrive\Documentos\IFNMG\NET\DotNet-Exercicios\Blazor\bin\Release\net8.0\publish\Blazor.runtimeconfig.json
+C:\Users\filip\OneDrive\Documentos\IFNMG\NET\DotNet-Exercicios\Blazor\bin\Release\net8.0\publish\Blazor.pdb

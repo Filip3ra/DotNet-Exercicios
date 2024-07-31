@@ -1,10 +1,20 @@
 using Blazor.Components;
+using Microsoft.EntityFrameworkCore;
+using Blazor.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+
+builder.Services.AddDbContext<ProdutoDbContext>
+(options =>{
+options.UseSqlite("Data Source=Produtos.db");
+});
+builder.Services.AddScoped<ProdutoServices>();
+
 
 var app = builder.Build();
 

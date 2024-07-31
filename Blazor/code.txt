@@ -39,3 +39,21 @@ novaTarefa = string.Empty;
 @t.Titulo </li>
 }
 </ul>
+
+
+
+
+
+
+
+
+...<button @onclick=
+"SimulateError">Simular Erro</button>
+@code {
+private void SimulateError() {
+throw new Exception("Isso é um erro.");
+}
+}
+
+
+

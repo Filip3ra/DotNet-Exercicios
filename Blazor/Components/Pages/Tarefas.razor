@@ -18,6 +18,12 @@
 <input placeholder="Alguma tarefa" @bind="novaTarefa" />
 <button @onclick="AdicionarTarefa">Adicionar</button>
 
+<p></p>
+<p></p>
+<p></p>
+
+<button @onclick="SilumaErro">Erro</button>
+
 @if (!string.IsNullOrEmpty(mensagemErro))
 {
     <p style="color: red;">@mensagemErro</p>
@@ -40,6 +46,11 @@
             novaTarefa = string.Empty;
             mensagemErro = null; // Limpar a mensagem de erro
         }
+    }
+
+    private void SilumaErro()
+    {
+        throw new Exception("Isso é um erro.");
     }
 
     public class Item
