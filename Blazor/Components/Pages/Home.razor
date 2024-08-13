@@ -1,5 +1,7 @@
 ﻿@page "/"
 @inject ProdutoServices service
+@inject IJSRuntime JsRuntime
+
 <h1>InfoTech Store</h1>
 <div class="container">
 
@@ -12,7 +14,7 @@
                     <th>Preço</th>
                     <th>Quantidade</th>
                     <th>Descrição</th>
-                    
+                    <th>Ações</th>
                 </tr>
             </thead>
             <tbody>
@@ -27,9 +29,9 @@
                             <td>@prod.Quant</td>
                             <td>@prod.Descr</td>
                             <td>
-                            <button class="btn btn-danger"
-                            @onclick="(()=>ApagaProduto(prod))">Deletar</butt
-                            on> 
+                                <button class="btn btn-danger"
+                                        @onclick="(() => ConfirmDelete(prod))">Deletar
+                                </button>
                             </td>
                         </tr>
                     }
@@ -43,10 +45,9 @@
     </div>
 </div>
 
-
 @code {
-
     List<Produto> Produtos = new List<Produto>();
+
     protected override async Task OnInitializedAsync()
     {
         await AtualizaProdutos();
@@ -57,9 +58,18 @@
         Produtos = await service.RetornaProdutoAsync();
     }
 
-    private async Task ApagaProduto(Produto prod){
-      await service.DeleteProductAsync(prod);
-      await AtualizaProdutos();
+    private async Task ConfirmDelete(Produto prod)
+    {
+        bool confirmado = await JsRuntime.InvokeAsync<bool>("confirm", $"Tem certeza que deseja deletar o produto '{prod.Nome}'?");
+        if (confirmado)
+        {
+            await ApagaProduto(prod);
+        }
     }
 
+    private async Task ApagaProduto(Produto prod)
+    {
+        await service.DeleteProductAsync(prod);
+        await AtualizaProdutos();
+    }
 }
